@@ -123,7 +123,7 @@ class CheckIOSolver:
         time.sleep(1)
         searchbox.submit()
         time.sleep(2)
-        google_results = self.driver.find_elements_by_xpath("//div[@class='r']/a[contains(@href,'publications')]")
+        google_results = self.driver.find_elements_by_xpath("//div[@class='yuRUbf']/a[contains(@href,'publications')]")
         current_google_result_links = []
         for results in google_results:
             current_google_result_links.append(results.get_attribute("href"))
